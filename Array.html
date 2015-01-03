@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+<p id="Hello"></p>
+<p></p>
+<button type="button" onclick="myFunction()" value="Hide/Show">Clike me</button>
+<p></p>
+<div id="array">Hello World</div>
+<p></p>
+<button type="button" onclick="ohFunction()" value="Hide/Show">Click me know</button>
+<p></p>
+<div id="toggle" style="display: none">Hello World</div>
+<p></p>
+
+
+<input type="text" id="text1" onkeyup="thisFunction()">
+<input type="text" id="text2">
+<input type="text" id="text3">
+<input type="text" id="text4">
+
+
+<form>
+        First number:<br>
+        <input type="text" id="num1">
+        <br>
+        <br>
+        Second Number:<br>
+        <input type="text" id="num2">
+        <br><br>
+    <input type="button" name="Addition"   value="  +  " OnClick="plus()">
+    <input type="button" name="Subtraction"   value="  -  " OnCLick="minus()">
+    <input type="button" name="Multiplication" value="  *  " OnClick="mul()">
+    <input type="button" name="Division"  value="  /  " OnClick="divide()">
+    <input type="button" name="remainder" value=" % " onclick="remain()">
+    <input type="button" name="equal" value=" = " onclick="equ()">
+    <input type="button" name="Factorial" value="Factorial" onclick="fact()">
+    </form>
+<div id="result"></div>
+<script>
+    
+    function plus(){
+
+        var a = +(document.getElementById('num1').value);
+        var b = +(document.getElementById('num2').value);
+        document.getElementById('result').innerHTML = a + b;
+    }
+    function minus(){
+        var a = +(document.getElementById('num1').value);
+        var b = +(document.getElementById('num2').value);
+        document.getElementById('result').innerHTML = a - b;
+    }
+    function mul(){
+        var a = +(document.getElementById('num1').value);
+        var b = +(document.getElementById('num2').value);
+        document.getElementById('result').innerHTML = a * b;
+    }
+    function divide(){
+        var a = +(document.getElementById('num1').value);
+        var b = +(document.getElementById('num2').value);
+        document.getElementById('result').innerHTML = a / b;
+    }
+    function remain(){
+        var a = +(document.getElementById('num1').value);
+        var b = +(document.getElementById('num2').value);
+        document.getElementById('result').innerHTML = a % b;
+    }
+    function equ(){
+        var a = +(document.getElementById('num1').value);
+        var b = +(document.getElementById('num2').value);
+        document.getElementById('result').innerHTML = a = b;
+    }
+
+    function fact(){
+//        alert("jun");
+
+        var a = document.getElementById('num1').value;
+        var product=a;
+       for(var i=a-1; i>1; i--)
+       {
+          product*=i;
+       }
+       document.getElementById('result').innerHTML = product;
+    }
+    console.log('plus');
+
+
+    function thisFunction(){
+        var q = document.getElementById('text1').value;
+        document.getElementById('text2').value = q;
+        document.getElementById('text3').value = q;
+        document.getElementById('text4').value = q;
+    }
+
+
+
+
+    function myFunction(){
+        var a = document.getElementById('array');
+        if (a.style.display === "block" || a.style.display === ""){
+            a.style.display = "none"
+        }
+        else
+            a.style.display = "block"
+    }
+
+
+
+    function ohFunction(){
+        var b = document.getElementById('toggle');
+        if (b.style.display === "block" || b.style.display === ""){
+            b.style.display = "none"
+        }
+        else
+            b.style.display = "block"
+    }
+
+
+
+    var staffMamber = [
+        {
+            name: 'Owais kz',
+            cast: 'khanzada',
+            age: 24,
+            email: 'Owaisraza@kz',
+            password: 123456789
+        },
+        {
+            name: 'furqan kz',
+            cast: 'khanzada',
+            age: 20,
+            email: 'furqan@kz',
+            password: 123456789985
+        },
+        {
+            name: 'Zubair kz',
+            cast: 'khanzada',
+            age: 22,
+            email: 'Zubair@kz',
+            password: 123456789121
+        },
+        {
+            name: 'Umair kz',
+            cast: 'khanzada',
+            age: 20,
+            email: 'Umair@kz',
+            password: 123456789010
+        },
+        {
+            name: 'Suhaib kz',
+            cast: 'khanzada',
+            age: 14,
+            email: 'Suhaib@kz',
+            password: 123456789545
+        }
+
+    ];
+    var kz = document.createElement('ul');
+    document.body.appendChild(kz);
+
+    for (var i = 0; i < staffMamber.length; i++){
+        var a = staffMamber[i].name;
+        for (var d in staffMamber[i]){
+            var b = staffMamber[i];
+        }
+        console.log(b);
+
+        var da = document.createElement('li');
+        kz.appendChild(da);
+        da.innerHTML = a;
+    }
+    console.log(a);
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<!--<button type="button" id="Add" onclick="addFunction()">click to add</button>-->
+<!--<button type="button" id="Remove" onclick="removeFunction()">click to remove</button>-->
+
+<!--<ul id="www">-->
+
+<!--</ul>-->
+
+<!--<button type="button" onclick="ssFunction()">Zubair kz</button>-->
+<!--<p></p>-->
+<!--<div id="demo">WHO R U</div>-->
+<!--<p></p>-->
+<!--<button type="button" onclick="hhFunction()">Umair kz</button>-->
+<!--<p></p>-->
+<!--<div id="array" style="display: none">WHO R U</div>-->
+<!--<p></p>-->
+<input type="text" id="text1" onkeyup="kzFunction()">
+<input type="text" id="text2">
+<input type="text" id="text3">
+<input type="text" id="text4">
+<input type="text" id="text5">
+<input type="text" id="text6">
+<input type="text" id="text7">
+
+
+
+<script>
+    //    function addFunction(){
+    //        var ul = document.getElementById("www");
+    //        var li = document.createElement('li');
+    //        li.setAttribute('style','color: green');
+    //        ul.appendChild(li);
+    //        li.innerHTML = "hello world";
+    //
+    //    }
+    //
+    //    function removeFunction(){
+    //        var re = document.getElementById('www');
+    //        re.removeChild(re.childNodes[0]);
+    //    }
+    //
+        function kzFunction(){
+            var a = document.getElementById('text1').value;
+            document.getElementById('text2').value = a;
+            document.getElementById('text3').value = a;
+            document.getElementById('text4').value = a;
+            document.getElementById('text5').value = a;
+            document.getElementById('text6').value = a;
+            document.getElementById('text7').value = a;
+
+        }
+    //
+    //    function ssFunction(){
+    //        var j = document.getElementById('demo');
+    //        if (j.style.display === 'block' || j.style.display === ""){
+    //            j.style.display = "none"
+    //        }
+    //        else{
+    //            j.style.display = "block"
+    //        }
+    //    }
+    //    function hhFunction(){
+    //        var e = document.getElementById('array');
+    //        if (e.style.display === 'block' || e.style.display === ""){
+    //            e.style.display = "none"
+    //        }
+    //        else{
+    //            e.style.display = "block"
+    //        }
+    //    }
+
+
+
+
+    var task = [
+        'furqan',
+        'owais',
+        'shahzad',
+        'haider ali',
+
+
+       course=[
+            'java script',
+            'angular',
+            'bootstrap',
+            'backbone'
+
+        ]
+    ];
+
+    for (var i = 0; i < task.length; i++){
+        for (var m = 0 ; m < course.length ; m++) {
+            if (i == m){
+
+//                console.log(task[i],course[m])
+            }
+        }
+    }
+
+
+//    var zubair = 20;
+//
+//    if (zubair <= 14){
+//        console.log("child");
+//    }
+//
+//    else if (zubair <= 19) {
+//        console.log('mature');
+//        }
+//    else{
+//        console.log("young");
+//
+//    }
+   var k = "Zubair";
+
+    switch (k){
+        case "Zubair":
+
+                console.log("wrong");
+            break;
+        case "umair":
+
+            console.log("galt");
+            break;
+
+        case "day":
+
+            console.log("true");
+            break;
+
+        default :
+            console.log("sxgf fg ");
+            break;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
